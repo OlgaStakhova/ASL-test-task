@@ -1,0 +1,40 @@
+.baner {
+  background-image: url('../images/baner.png');
+  background-position: center;
+  background-size: 97%;
+  background-repeat: no-repeat;
+  display: block;
+  margin: 0 5%;
+
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(12.7rem + 6.4vw);
+    line-height: 74.5%;
+    margin: 0;
+    padding: 6% 0;
+    color: #FFFFFF;
+
+    &--subtitle {
+      margin-left: 4%;
+    }
+  }
+}
+
+@media all and (max-width:$mobile-bp-max) {
+  .baner__title {
+    font-size: calc(2rem + 7.4vw);
+  }
+}
+
+@media all and (min-width:$tablet-bp-min) and (max-width: $tablet-bp-max) {
+  .baner__title {
+    font-size: calc(4rem + 7.4vw);
+  }
+}
+
+@media all and (min-width: $desktop-bp-min) and (max-width: 1919px) {
+  .baner__title {
+    font-size: calc(6rem + 7.4vw);
+  }
+}

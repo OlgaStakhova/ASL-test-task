@@ -1,0 +1,111 @@
+.about {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  padding-bottom: 2.3%;
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    left: 5%;
+    height: 1px;
+    width: 90%;
+    background-color: #E9E9E9;
+  }
+
+  &__description {
+    width: 38%;
+    transform: translateY(-10%);
+    padding: 4%;
+    margin-right: 5%;
+    background-color: #14161B;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: calc(0.1rem + 1.2vw);
+    line-height: 160%;
+    background-image: url("../images/about-figure.png");
+    background-size: auto;
+    background-position: 91% 23%;
+    background-repeat: no-repeat;
+  }
+
+  &__text {
+    margin-bottom: 9%;
+  }
+
+  &__button {
+    padding: 2% 5%;
+    width: 51%;
+    height: 25%;
+    white-space: nowrap;
+    background-color: #DA1648;
+    border: 1px solid #DA1648;
+    border-radius: 35px;
+    &:hover {
+      background-color: #FFFFFF;
+    color: #DA1648
+    }
+  }
+
+  &__tehnologie {
+    width: 47%;
+    padding: 4% 11% 2% 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__first-block-tehnologi {
+    position: relative;
+    display: flex;
+    gap:10%;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 5%;
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      height: 1px;
+      background-color: #E9E9E9;
+      bottom: 0;
+      left: -14%;
+      right: -15%;
+    }
+  }
+
+  &__second-block-tehnologi {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 6%;
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      height: 1px;
+      background-color: #E9E9E9;
+      bottom: 0;
+      left: -14%;
+      right: 0;
+    }
+  }
+  &__first-items {
+    width: 80%;
+    height: auto;
+
+  }
+  &__item {
+    cursor: zoom-out;
+    transition: transform 0.3s linear;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
