@@ -9,7 +9,7 @@ window.onload = function () {
   gsap.set(wrapper, { xPercent: -50, yPercent: -50 })
   gsap.set(wrapper, { y: 25 })
 
-  const boxWidth = 250;
+  const boxWidth = 300;
   const totalWidth = boxWidth * 6;
 
   const dirFromLeft = "+=" + totalWidth

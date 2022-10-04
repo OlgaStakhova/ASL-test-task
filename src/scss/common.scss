@@ -64,4 +64,5 @@ html {
   }
   button {
     cursor:pointer;
-  }
+    transition: color 0.3s linear, background-color 0.3s linear;
+   }
